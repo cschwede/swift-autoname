@@ -39,10 +39,12 @@ Done!
 Example use
 -----------
 
- > curl -H "X-Auth-Token: AUTH_token" -i -v -X PUT --data @filename http://saio:8080/v1/AUTH_test/containername/
- < ...
- < X-Object-Meta-Public-Autoname: 17c73a89-5e18-48ba-8f41-88b7dad817ec
- < ...
- > swift list containername
- < ...
- < 17c73a89-5e18-48ba-8f41-88b7dad817ec
+Using curl and python-swiftclient:
+
+    > curl -H "X-Auth-Token: AUTH_token" -i -v -X PUT --data @filename http://saio:8080/v1/AUTH_test/containername/
+    < ...
+    < X-Object-Meta-Public-Autoname: 17c73a89-5e18-48ba-8f41-88b7dad817ec
+    < ...
+    > swift list containername
+    < ...
+    < 17c73a89-5e18-48ba-8f41-88b7dad817ec
